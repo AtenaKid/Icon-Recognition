@@ -38,7 +38,8 @@ void iconRecog::testWithRealData()
 		CImg<unsigned char> gray_crop = cropImg( gray_img, binary_img);
 
 		// ============= Making Square Image ===================
-		int maxSize = max(width, height);
+		//int maxSize = max(width, height);
+		int maxSize = 64; 
 		CImg<unsigned char> gray_crop_resize = gray_crop.resize(maxSize, maxSize, 1, 1, 5);
 
 		// ============= Display the image ===================== 
@@ -56,7 +57,7 @@ void iconRecog::testWithRealData()
 		*/
 		// Calculate HOG feature of the current image 
 		// C++ implementation  https://kr.mathworks.com/matlabcentral/fileexchange/28689-hog-descriptor-for-matlab
-		int nwin_x = 3, nwin_y = 3;	// number of HOG window per image
+		int nwin_x = 2, nwin_y = 2;	// number of HOG window per image
 		int B = 9;				// the number of histogram bins 
 		int L = gray_crop_resize._width, C = gray_crop_resize._height; 
 		vector<float> H(nwin_x*nwin_y*B, 0);
@@ -101,7 +102,7 @@ void iconRecog::testWithRealData()
 
 		cout << "Range of angles: [" << cdfMin << ", " << cdfMax << "]"<<'\n';
 
-		CImg<> angles2; 
+		CImg<> angles2;			// temporal parameters 
 		CImg<> magnit2; 
 		for (int n = 0; n < nwin_x ; n++)
 		{
@@ -119,9 +120,11 @@ void iconRecog::testWithRealData()
 				vector<float> H2(B, 0);
 				fill(H2.begin(), H2.end(), 0);
 
-				for (unsigned int ang_lim = 0; ang_lim <= 360; ang_lim += 360/B)
+				for (unsigned int ang_lim = 0; ang_lim <= 360; ang_lim += 360/(B-1))
 				{
 					++bin;
+					cout << "Bin: " << bin <<  ", Angle Lim: " << ang_lim << endl; 
+
 					unsigned int idx = 0;
 					for (unsigned int i = 0; i < angles2._height; i++)
 					{
@@ -149,6 +152,7 @@ void iconRecog::testWithRealData()
 					accum += H2[i] * H2[i];
 				}
 				double normH2 = sqrt(accum);
+
 				// normalized H2
 				for (int i = 0; i < bin; ++i)
 				{
