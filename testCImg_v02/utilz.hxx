@@ -11,6 +11,7 @@
 
 using namespace cimg_library;
 
+
 /**
 * Thresholding the image at a given threshold
 */
@@ -232,9 +233,9 @@ cimg_library::CImg<> apply_sobel_filter(cimg_library::CImg<> image, float filter
 					filter[2][1] * (float)image(r + 1, c, 0, channel) +
 					filter[2][2] * (float)image(r + 1, c + 1, 0, channel);
 
-				//scale the value to [0, 255];
+				//scale the value to [0, 255]; why it should be scaled? for display?
 
-				value = (value + 255) / 510 * 255;
+				//value = (value + 255) / 510 * 255;
 
 				output(r, c, 0, channel) = (int)value;
 			}
@@ -244,14 +245,13 @@ cimg_library::CImg<> apply_sobel_filter(cimg_library::CImg<> image, float filter
 }
 
 
-
-
 // Given the x & y gradients, compute the magnitude
 float get_magnitude(float ix, float iy) {
 	double value = sqrt(pow(ix, 2) + pow(iy, 2));
 
 	//scale the value from [0, 360.6] to [0, 255]
-	return float(255 * (value / 360.6));
+	//return float(255 * (value / 360.6));
+	return value; 
 }
 
 
@@ -357,6 +357,146 @@ void detect_edges(cimg_library::CImg<> input_image) {
 	}
 
 
+}
+
+/*
+* Calculate Gradient image magnitude 
+*/
+
+
+
+/*
+* HOG Features
+*/
+// Calculate HOG feature of the current image 
+// C++ implementation  https://kr.mathworks.com/matlabcentral/fileexchange/28689-hog-descriptor-for-matlab
+
+vector<float> HOG_Feature_Gen(CImg<float> im, int nwin_x = 3, int nwin_y = 3, int B = 9)
+{
+	//int nwin_x = 3, nwin_y = 3;	// number of HOG window per image
+	//int B = 9;				// the number of histogram bins 
+	int L = im._width, C = im._height;
+	vector<float> H(nwin_x*nwin_y*B, 0);
+	double m = sqrt(L / 2);
+	unsigned int step_x = unsigned int(floor(C / (nwin_x + 1)));
+	unsigned int step_y = unsigned int(floor(L / (nwin_y + 1)));
+	int cont = 0;
+
+	// get gradient image 
+	CImgList<float> grad = im.get_gradient("xy", 3);
+
+	// Construct gradient magnitude image 
+	//vector<float> angles(L * C, 0);
+	//vector<float> magnit(L * C, 0); 
+
+	CImg <float> angles(L, C, 1, 1, 0);
+	CImg <float> magnit(L, C, 1, 1, 0); 
+
+	for (int i = 0; i < L; i++)
+	{
+		for (int j = 0; j < C; j++)
+		{
+			int idx = i * L + j;
+			magnit(i, j, 0) = sqrt(grad[0](i, j) * grad[0](i, j) + grad[1](i, j) * grad[1](i, j));
+			angles(i, j, 0) = abs(atan2(grad[0](i, j), grad[1](i, j))); // as unsigned perform the best
+			//cout << magnit(i, j) << ',' << angles(i, j) << '\t';
+		}
+		//cout << endl;
+	}
+	
+	// Convert them to matrix
+
+	// Check the angle n 
+	/*
+	int cdfMin = 100; int cdfMax = -100;
+	for (unsigned int i = 0; i < angles.size(); i++)
+	{
+		if (angles[i] < cdfMin)
+			cdfMin = angles[i];
+		if (angles[i] > cdfMax)
+			cdfMax = angles[i];
+	}
+	cout << "Range of angles: [" << cdfMin << ", " << cdfMax << "]" << '\n';
+
+	// Check the range of magniture 
+	cdfMin = 100; cdfMax = -100;
+	for (unsigned int i = 0; i < magnit.size(); i++)
+	{
+		if (magnit[i] < cdfMin)
+			cdfMin = magnit[i];
+		if (magnit[i] > cdfMax)
+			cdfMax = magnit[i];
+	}
+	cout << "Range of Magnitude: [" << cdfMin << ", " << cdfMax << "]" << '\n';
+	*/
+
+	CImg<> angles2;			// temporal parameters
+	CImg<> magnit2;
+	for (int n = 0; n < nwin_x; n++)
+	{
+		for (int m = 0; m < nwin_y; m++)
+		{
+			cont++;
+			angles2 = angles.get_crop(n*step_y , m*step_x , 0, 0, (n + 2) * step_y, (m + 2) * step_x, 0, 0);
+			magnit2 = magnit.get_crop(n*step_y , m*step_x , 0, 0, (n + 2) * step_y, (m + 2) * step_x, 0, 0);
+
+			int K = angles2._width * angles2._height;
+
+			//assembling the histogram with 9 bins(range of 20 degrees per bin)
+			int bin = -1;
+			const double pi = 3.1412;
+			vector<float> H2(B, 0);
+			fill(H2.begin(), H2.end(), 0);
+
+			for (float ang_lim = 0; ang_lim <= 3.1412/2; ang_lim += 3.1412 / (2 *(B - 1)))
+			{
+				bin = bin + 1;
+				//cout << "Bin: " << bin << ", Angle Lim: " << ang_lim << endl;
+
+				unsigned int idx = 0;
+				for (unsigned int i = 0; i < angles2._height; i++)
+				{
+					for (unsigned int j = 0; j < angles2._width; j++)
+					{
+						idx = i*angles2._width + j;
+
+						double cur_angle = angles2(i, j, 0, 0);
+
+						//cout << "v_angles[" << idx << "] = " << cur_angle << endl;
+						//cout << ", ang_lim = " << ang_lim << '\n';
+						if (cur_angle < ang_lim)
+						{
+							angles2(i, j, 0, 0) = 1000;
+							H2[bin] = H2[bin] + magnit2[idx];
+							//cout << ",		H2[" << bin << "] = " << H2[bin] << ",		Magnit2[idx] = " << magnit2[idx] << endl;
+							}
+					}
+				}
+				//cout << ",		H2[" << bin << "] = " << H2[bin] << ",		Magnit2[idx] = " << magnit2[idx] << endl; 
+			}
+
+			// l2-norm
+			double accum = 0.;
+			for (int i = 0; i < bin; ++i) {
+				accum += H2[i] * H2[i];
+				//cout << H2[i] << '\t';
+			}
+			//cout << endl; 
+			double normH2 = sqrt(accum);
+			//cout << "Norm H2: " << normH2 << endl;
+
+			// normalized H2
+			for (int i = 0; i < bin; ++i)
+			{
+				H2[i] = float(H2[i] / (normH2 + 0.01)); 
+				//cout << H2[i] << '\t';
+				H[(cont - 1)*B + i] = H2[i];
+			}
+		}
+	}
+
+	//cout << "Finish HOG Features Extraction !!!" << endl;
+	return H;
 }
 
 #endif
