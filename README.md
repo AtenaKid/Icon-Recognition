@@ -7,7 +7,8 @@ SVM (via LIBSVM) is intended to use for classification purpose.
 The project is used visual studio 2015 community edition. 
 
 TODO: 
-- Check HOG Implementation
+- Prepare HoG Features data for SVM Training
+- SVM Training with HoG Features
 - Shape-based features to reduce features dimension. 
 
 
