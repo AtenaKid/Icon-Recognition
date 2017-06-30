@@ -1,0 +1,8 @@
+1, Crop size 16, nWinx: 3, nWiny: 3, B: 10Train Pos: 89, Test Pos: 41
+1, Crop size 32, nWinx: 3, nWiny: 3, B: 10Train Pos: 78, Test Pos: 54
+1, Crop size 48, nWinx: 3, nWiny: 3, B: 10Train Pos: 72, Test Pos: 54
+1, Crop size 64, nWinx: 3, nWiny: 3, B: 10Train Pos: 66, Test Pos: 54
+1, Crop size 80, nWinx: 3, nWiny: 3, B: 10Train Pos: 64, Test Pos: 54
+1, Crop size 96, nWinx: 3, nWiny: 3, B: 10Train Pos: 65, Test Pos: 58
+1, Crop size 112, nWinx: 3, nWiny: 3, B: 10Train Pos: 63, Test Pos: 45
+1, Crop size 128, nWinx: 3, nWiny: 3, B: 10Train Pos: 60, Test Pos: 45

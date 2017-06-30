@@ -1,2 +1,32 @@
-﻿  testCImg_v02.vcxproj -> C:\Users\Thuong Nguyen\Documents\GitHub\Icon-Recognition\Debug\testCImg_v02.exe
+﻿  iconRecog.cpp
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\utilz.hxx(254): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\utilz.hxx(451): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(208): warning C4101: 'cFullFileName': unreferenced local variable
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(267): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(272): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(295): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(299): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(329): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\iconrecog.cpp(330): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2766): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2780): note: see reference to function template instantiation 'void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _FwdIt=float *,
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2788): note: see reference to function template instantiation 'void std::_Fill_unchecked<float*,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _Ty=int,
+              _FwdIt=float *
+          ]
+  c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\utilz.hxx(449): note: see reference to function template instantiation 'void std::fill<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>,
+              _Ty=int
+          ]
+c:\users\thuong nguyen\documents\github\icon-recognition\testcimg_v02\utilz.hxx(129): warning C4172: returning address of local variable or temporary: histogram
+  testCImg_v02.vcxproj -> C:\Users\Thuong Nguyen\Documents\GitHub\Icon-Recognition\Debug\testCImg_v02.exe
   testCImg_v02.vcxproj -> C:\Users\Thuong Nguyen\Documents\GitHub\Icon-Recognition\Debug\testCImg_v02.pdb (Full PDB)

@@ -2,20 +2,27 @@
 #include "iconRecog.h"
 
 using namespace cimg_library;
+// Global parmater for HOG Features
 
 int main() {
-	iconRecog icon;
-	//	icon.HOGfeature2XML(); // 특징 추출
-
-	//	icon.trainingBySVM(); // 트레이닝
-
-	//	icon.testSVMTrainedData(); // 성능평가
-
-	icon.testWithRealData(); // 실제 app 캡쳐화면으로 평가
-
-	//CImg<unsigned char> image("icon_image/back/back/back0.bmp");// , visu(500, 400, 1, 3, 0);
-	//const unsigned char red[] = { 255,0,0 }, green[] = { 0,255,0 }, blue[] = { 0,0,255 };
-	//CImgDisplay main_disp(image, "Original image ");// draw_disp(visu, "Intensity profile");
 	
+	iconRecog icon;
+	int cropSize = 32; 
+	bool is_train = false; 
+	if (is_train) 
+	{
+		cout << " Train LibSVM at size " << cropSize << "..." << endl;
+		icon.trainWithLibSVM(cropSize); // Training model 		
+	}
+
+	icon.evalParamSVM();
+
+	//freopen("icon.log", "w", stdout);
+	//cout << " Test trained SVM with training data ... "<< endl;
+	//icon.testSVMTrainedData(cropSize); // Test results with training model 
+	//cout << " Test trained SVM with real data ... " << endl; 
+	//icon.testWithRealData(cropSize); // 실제 app 캡쳐화면으로 평가
+	//fclose(stdout); 
+
 	return 0;
 }

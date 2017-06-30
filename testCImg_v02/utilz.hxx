@@ -499,4 +499,6 @@ vector<float> HOG_Feature_Gen(CImg<float> im, int nwin_x = 3, int nwin_y = 3, in
 	return H;
 }
 
+
+
 #endif

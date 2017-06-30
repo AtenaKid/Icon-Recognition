@@ -1,0 +1,232 @@
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as shopping
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as shopbag
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as love
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as shopbag
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as home
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as close
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as settings
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as profile
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as menu
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as back
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as shopping
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as shopbag
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as close
+Possitive of for test data at crop size of 16 is 37% ! 
+End test data!
+1, Crop size 16, nWinx: 3, nWiny: 3, B: 9Train Pos: 89, Test Pos: 37
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as delete
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as love
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as delete
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as shopping
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as back
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as settings
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as info
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as shopbag
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 32 is 54% ! 
+End test data!
+1, Crop size 32, nWinx: 3, nWiny: 3, B: 9Train Pos: 78, Test Pos: 54
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as menu
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as shopping
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as shopping
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as back
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as shopping
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as info
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 48 is 50% ! 
+End test data!
+1, Crop size 48, nWinx: 3, nWiny: 3, B: 9Train Pos: 72, Test Pos: 50
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as delete
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as shopping
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as delete
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as search
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as shopping
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as info
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 64 is 58% ! 
+End test data!
+1, Crop size 64, nWinx: 3, nWiny: 3, B: 9Train Pos: 67, Test Pos: 58
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as menu
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as close
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as delete
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as search
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as shopping
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as profile
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 80 is 54% ! 
+End test data!
+1, Crop size 80, nWinx: 3, nWiny: 3, B: 9Train Pos: 64, Test Pos: 54
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as delete
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as shopping
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as menu
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as search
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as shopping
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as profile
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 96 is 58% ! 
+End test data!
+1, Crop size 96, nWinx: 3, nWiny: 3, B: 9Train Pos: 65, Test Pos: 58
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as shopbag
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as close
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as delete
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as search
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as shopping
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as profile
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 112 is 54% ! 
+End test data!
+1, Crop size 112, nWinx: 3, nWiny: 3, B: 9Train Pos: 63, Test Pos: 54
+Loaded train model!
+Loaded train model!
+0, icon_image/REAL_DATA/aliexpress_back.bmp is predicted as back
+1, icon_image/REAL_DATA/aliexpress_close.bmp is predicted as close
+2, icon_image/REAL_DATA/aliexpress_close2.bmp is predicted as close
+3, icon_image/REAL_DATA/aliexpress_delete.bmp is predicted as profile
+4, icon_image/REAL_DATA/aliexpress_delete2.bmp is predicted as shopbag
+5, icon_image/REAL_DATA/aliexpress_love.bmp is predicted as close
+6, icon_image/REAL_DATA/aliexpress_menu.bmp is predicted as menu
+7, icon_image/REAL_DATA/aliexpress_menu2.bmp is predicted as back
+8, icon_image/REAL_DATA/aliexpress_menu3.bmp is predicted as menu
+9, icon_image/REAL_DATA/aliexpress_menu4.bmp is predicted as menu
+10, icon_image/REAL_DATA/aliexpress_minus.bmp is predicted as menu
+11, icon_image/REAL_DATA/aliexpress_plus.bmp is predicted as delete
+12, icon_image/REAL_DATA/aliexpress_plus2.bmp is predicted as search
+13, icon_image/REAL_DATA/aliexpress_search.bmp is predicted as search
+14, icon_image/REAL_DATA/aliexpress_share.bmp is predicted as back
+15, icon_image/REAL_DATA/aliexpress_shopping.bmp is predicted as settings
+16, icon_image/REAL_DATA/aliexpress_shopping2.bmp is predicted as profile
+17, icon_image/REAL_DATA/aliexpress_shopping3.bmp is predicted as shopping
+18, icon_image/REAL_DATA/kakao_profile.bmp is predicted as profile
+19, icon_image/REAL_DATA/netflix_menu.bmp is predicted as menu
+20, icon_image/REAL_DATA/netflix_search.bmp is predicted as search
+21, icon_image/REAL_DATA/outlook_menu.bmp is predicted as minus
+22, icon_image/REAL_DATA/youtube_home.bmp is predicted as back
+23, icon_image/REAL_DATA/youtube_search.bmp is predicted as search
+Possitive of for test data at crop size of 128 is 50% ! 
+End test data!
+1, Crop size 128, nWinx: 3, nWiny: 3, B: 9Train Pos: 62, Test Pos: 50
